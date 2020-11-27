@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Gonki" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_ferrari" translatesAutoresizingMaskIntoConstraints="NO" id="H50-fU-eFa">
+                                <rect key="frame" x="378" y="100" width="60" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GoRacing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jy7-0g-Sb9">
+                                <rect key="frame" x="458" y="114" width="188" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="48"/>
+                                <color key="textColor" name="White"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S0b-IW-Cvu" customClass="MyButton" customModule="Gonki" customModuleProvider="target">
+                                <rect key="frame" x="362" y="300" width="300" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Yellow"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="26"/>
+                                <state key="normal" title="Start new game">
+                                    <color key="titleColor" name="Black"/>
+                                </state>
+                                <connections>
+                                    <segue destination="b1E-sr-vzb" kind="show" id="dFn-jl-mD0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5x-UR-N9i" customClass="MyButton" customModule="Gonki" customModuleProvider="target">
+                                <rect key="frame" x="362" y="370" width="300" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Yellow"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="26"/>
+                                <state key="normal" title="Results">
+                                    <color key="titleColor" name="Black"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9fX-dB-A0l" kind="show" id="SpV-2g-NEd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3I-Ce-rqv" customClass="MyButton" customModule="Gonki" customModuleProvider="target">
+                                <rect key="frame" x="362" y="440" width="300" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Yellow"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="26"/>
+                                <state key="normal" title="Settings">
+                                    <color key="titleColor" name="Black"/>
+                                </state>
+                                <connections>
+                                    <action selector="settingAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FAr-h2-ig9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0g6-01-RlM" customClass="MyButton" customModule="Gonki" customModuleProvider="target">
+                                <rect key="frame" x="362" y="580" width="300" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="26"/>
+                                <state key="normal" title="Exit">
+                                    <color key="titleColor" name="White"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeAppAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Abr-2Y-JGN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VK3-4n-9NP" customClass="MyButton" customModule="Gonki" customModuleProvider="target">
+                                <rect key="frame" x="362" y="510" width="300" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="Yellow"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="26"/>
+                                <state key="normal" title="Change car">
+                                    <color key="titleColor" name="Black"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Lt2-Ja-bt1" kind="show" id="jTT-42-uvg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="Gray"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="88"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="RHS-Mh-Y8s">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="b1E-sr-vzb" customClass="GameViewController" customModule="Gonki" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1O8-VG-4kc">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="road" translatesAutoresizingMaskIntoConstraints="NO" id="ywW-06-MQi">
+                                <rect key="frame" x="0.0" y="215" width="1024" height="348"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-last_24_hours" translatesAutoresizingMaskIntoConstraints="NO" id="M3L-gD-cnx">
+                                <rect key="frame" x="47" y="30" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="22" translatesAutoresizingMaskIntoConstraints="NO" id="p1c-Kw-yCT">
+                                <rect key="frame" x="340" y="30" width="68" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="finish" translatesAutoresizingMaskIntoConstraints="NO" id="WfI-nx-0aT">
+                                <rect key="frame" x="982" y="215" width="42" height="348"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SemaforState" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vm3-Yf-haR">
+                                <rect key="frame" x="416" y="39" width="297" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="48"/>
+                                <color key="textColor" name="White"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROt-eC-SNV">
+                                <rect key="frame" x="135" y="38" width="156" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="42"/>
+                                <color key="textColor" name="White"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-f1_car" translatesAutoresizingMaskIntoConstraints="NO" id="Xuq-RD-6tC">
+                                <rect key="frame" x="0.0" y="253" width="120" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-f1_car" translatesAutoresizingMaskIntoConstraints="NO" id="te6-Hz-3do">
+                                <rect key="frame" x="0.0" y="420" width="120" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Bg-O1-sba">
+                                <rect key="frame" x="436" y="664" width="152" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="32"/>
+                                <state key="normal" title="Drive">
+                                    <color key="titleColor" name="White"/>
+                                </state>
+                                <connections>
+                                    <action selector="driveCarAction:" destination="b1E-sr-vzb" eventType="touchUpInside" id="7OX-Bn-rxF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWd-VZ-eMk">
+                                <rect key="frame" x="826" y="131" width="152" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="32"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" name="White"/>
+                                </state>
+                                <connections>
+                                    <action selector="UIButton:" destination="b1E-sr-vzb" eventType="touchUpInside" id="SCQ-78-XsV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="taJ-5O-Pac"/>
+                        <color key="backgroundColor" name="Gray"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OTV-Mr-ZiN"/>
+                    <connections>
+                        <outlet property="finishLine" destination="WfI-nx-0aT" id="rFR-Iu-c2I"/>
+                        <outlet property="pcCar" destination="Xuq-RD-6tC" id="Lm2-fm-QoH"/>
+                        <outlet property="semaforLabel" destination="vm3-Yf-haR" id="2DW-aO-1xR"/>
+                        <outlet property="timerLabel" destination="ROt-eC-SNV" id="zqi-cx-jFs"/>
+                        <outlet property="userCar" destination="te6-Hz-3do" id="dEG-nT-NWo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Bh-JB-JWB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.625" y="786.71875"/>
+        </scene>
+        <!--Result Table Table View Controller-->
+        <scene sceneID="VcU-HN-4uJ">
+            <objects>
+                <tableViewController modalPresentationStyle="fullScreen" id="9fX-dB-A0l" customClass="ResultTableTableViewController" customModule="Gonki" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="EYp-8Z-vgQ">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="row" id="mJC-rF-67C" customClass="ResultTableViewCell" customModule="Gonki" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="1024" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mJC-rF-67C" id="vXL-QS-snM">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="playerName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGB-YN-gT3">
+                                            <rect key="frame" x="20" y="11" width="91" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="gameResult" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hax-d8-paJ">
+                                            <rect key="frame" x="463" y="11" width="90" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="gameTime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khh-jJ-buV">
+                                            <rect key="frame" x="913" y="11" width="79" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="gameResult" destination="Hax-d8-paJ" id="tdC-Cf-gj8"/>
+                                    <outlet property="gameTime" destination="khh-jJ-buV" id="c8l-US-xro"/>
+                                    <outlet property="playerName" destination="yGB-YN-gT3" id="IU6-bK-rDj"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="9fX-dB-A0l" id="fQF-gm-cQ2"/>
+                            <outlet property="delegate" destination="9fX-dB-A0l" id="bay-Xp-EGV"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="aQz-UC-OTs"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R59-nQ-CkR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="823" y="88"/>
+        </scene>
+        <!--Change Car Collection View Controller-->
+        <scene sceneID="89k-Sf-rfL">
+            <objects>
+                <collectionViewController id="Lt2-Ja-bt1" customClass="ChangeCarCollectionViewController" customModule="Gonki" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ruw-Jb-VOx">
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="728"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="Gray"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="osi-Jr-dow">
+                            <size key="itemSize" width="198" height="152"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="z2R-R6-ZlF" customClass="ChangeCarCollectionViewCell" customModule="Gonki" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="198" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="RwB-Uf-xR9">
+                                    <rect key="frame" x="0.0" y="0.0" width="198" height="152"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mAm-IL-imb">
+                                            <rect key="frame" x="0.0" y="8" width="196" height="154"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="198" height="152"/>
+                                <connections>
+                                    <outlet property="carPicture" destination="mAm-IL-imb" id="zwz-nT-IrJ"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Lt2-Ja-bt1" id="7Wq-nA-89I"/>
+                            <outlet property="delegate" destination="Lt2-Ja-bt1" id="Q04-eF-HdX"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="3AR-aD-AnU"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d0C-2s-bzr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="822.65625" y="786.71875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="22" width="31.5" height="73"/>
+        <image name="finish" width="50" height="454"/>
+        <image name="ic_ferrari" width="195" height="268"/>
+        <image name="icons8-f1_car" width="100" height="33"/>
+        <image name="icons8-last_24_hours" width="65" height="65"/>
+        <image name="road" width="1024" height="454"/>
+        <namedColor name="Black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gray">
+            <color red="0.21600000560283661" green="0.27799999713897705" blue="0.31000000238418579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Yellow">
+            <color red="0.99199998378753662" green="0.94099998474121094" blue="0.20800000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
